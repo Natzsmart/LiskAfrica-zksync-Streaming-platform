@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Address",
+  "sourceName": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/utils/Address.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea2646970667358221220f065abd891a58fc6a64fbb021e4862b9330022596e3e5613486b9c65e874435264736f6c63430008140033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220f065abd891a58fc6a64fbb021e4862b9330022596e3e5613486b9c65e874435264736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

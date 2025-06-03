@@ -1,0 +1,1306 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "@matterlabs/zksync-contracts/l2/system-contracts/BootloaderUtilities.sol:BootloaderUtilities": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/BootloaderUtilities.sol:15",
+        "version": {
+          "withMetadata": "c78a52913d5c3857c045d755b968c588f890548581478786babbec0966f70dfc",
+          "withoutMetadata": "c593651cf8ccf4fcf08b03973d11bf706b482d916a31c84c610aa690d8fa1079",
+          "linkedWithoutMetadata": "c593651cf8ccf4fcf08b03973d11bf706b482d916a31c84c610aa690d8fa1079"
+        },
+        "inherit": [
+          "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IBootloaderUtilities.sol:IBootloaderUtilities"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTransactionHashes((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,bytes32[],bytes,bytes))"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IAccountCodeStorage.sol:IAccountCodeStorage": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IAccountCodeStorage.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "storeAccountConstructingCodeHash(address,bytes32)",
+          "storeAccountConstructedCodeHash(address,bytes32)",
+          "markAccountCodeHashAsConstructed(address)",
+          "getRawCodeHash(address)",
+          "getCodeHash(uint256)",
+          "getCodeSize(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IBootloaderUtilities.sol:IBootloaderUtilities": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IBootloaderUtilities.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getTransactionHashes((uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,bytes32[],bytes,bytes))"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IBytecodeCompressor.sol:IBytecodeCompressor": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IBytecodeCompressor.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "publishCompressedBytecode(bytes,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IContractDeployer.sol:IContractDeployer": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IContractDeployer.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getNewAddressCreate2(address,bytes32,bytes32,bytes)",
+          "getNewAddressCreate(address,uint256)",
+          "create2(bytes32,bytes32,bytes)",
+          "create2Account(bytes32,bytes32,bytes,uint8)",
+          "create(bytes32,bytes32,bytes)",
+          "createAccount(bytes32,bytes32,bytes,uint8)",
+          "getAccountInfo(address)",
+          "updateAccountVersion(uint8)",
+          "updateNonceOrdering(uint8)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IEthToken.sol:IEthToken": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IEthToken.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "balanceOf(uint256)",
+          "transferFromTo(address,address,uint256)",
+          "totalSupply()",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "mint(address,uint256)",
+          "withdraw(address)",
+          "withdrawWithMessage(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IImmutableSimulator.sol:IImmutableSimulator": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IImmutableSimulator.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getImmutable(address,uint256)",
+          "setImmutables(address,struct ImmutableData[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IKnownCodesStorage.sol:IKnownCodesStorage": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IKnownCodesStorage.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "markFactoryDeps(bool,bytes32[])",
+          "markBytecodeAsPublished(bytes32,bytes32,uint256)",
+          "getMarker(bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IL1Messenger.sol:IL1Messenger": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IL1Messenger.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "sendToL1(bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/INonceHolder.sol:INonceHolder": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/INonceHolder.sol:13",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getMinNonce(address)",
+          "getRawNonce(address)",
+          "increaseMinNonce(uint256)",
+          "setValueUnderNonce(uint256,uint256)",
+          "getValueUnderNonce(uint256)",
+          "incrementMinNonceIfEquals(uint256)",
+          "getDeploymentNonce(address)",
+          "incrementDeploymentNonce(address)",
+          "validateNonceUsage(address,uint256,bool)",
+          "isNonceUsed(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IPaymaster.sol:IPaymaster": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IPaymaster.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "validateAndPayForPaymasterTransaction(bytes32,bytes32,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,bytes32[],bytes,bytes))",
+          "postTransaction(bytes,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,bytes32[],bytes,bytes),bytes32,bytes32,uint8,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IPaymasterFlow.sol:IPaymasterFlow": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IPaymasterFlow.sol:12",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "general(bytes)",
+          "approvalBased(address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/ISystemContext.sol:ISystemContext": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/ISystemContext.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "chainId()",
+          "origin()",
+          "gasPrice()",
+          "blockGasLimit()",
+          "coinbase()",
+          "difficulty()",
+          "baseFee()",
+          "blockHash(uint256)",
+          "getBlockHashEVM(uint256)",
+          "getBlockNumberAndTimestamp()",
+          "getBlockNumber()",
+          "getBlockTimestamp()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/libraries/EfficientCall.sol:EfficientCall": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/libraries/EfficientCall.sol:31",
+        "version": {
+          "withMetadata": "d3fcfa1d556209d1bdfa4adefcab60beab3d01170b885d0f9db1b0474a3e1c80",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/libraries/RLPEncoder.sol:RLPEncoder": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/libraries/RLPEncoder.sol:5",
+        "version": {
+          "withMetadata": "23e00461b0c1287eca2133dbc83e50943a17bfd71fedb02f755ebfc47dc9c12e",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/libraries/SystemContractHelper.sol:SystemContractHelper": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/libraries/SystemContractHelper.sol:40",
+        "version": {
+          "withMetadata": "0fa02d4f6d458df005616d48a92807f976e2d52a5c3a698da23e01c2f8b9a2a4",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/libraries/SystemContractsCaller.sol:SystemContractsCaller": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/libraries/SystemContractsCaller.sol:67",
+        "version": {
+          "withMetadata": "dbd6d46cdd9eff4680488781b95dff098cdf06253648c74fb9696e42530c5d23",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/libraries/TransactionHelper.sol:TransactionHelper": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/libraries/TransactionHelper.sol:77",
+        "version": {
+          "withMetadata": "993c7b93941023afa9f093368d67ca5ccc5982741130e0fba3fc00dcccba70d8",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/libraries/Utils.sol:Utils": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/libraries/Utils.sol:10",
+        "version": {
+          "withMetadata": "042dc90cc2ecadd6537ca5f0282e912725af90b56e64111d82644ad12dd01e8b",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/token/ERC20/IERC20.sol:IERC20": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/token/ERC20/extensions/IERC20Permit.sol:IERC20Permit": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/token/ERC20/extensions/IERC20Permit.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/token/ERC20/utils/SafeERC20.sol:SafeERC20": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/token/ERC20/utils/SafeERC20.sol:19",
+        "version": {
+          "withMetadata": "85fe89e0af8d095529b9a41e785876b38fdbc9edbe655bdeb4b9dd646d86bb37",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/utils/Address.sol:Address": {
+        "src": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "32df54e53da0ea32d75e7c1a76b939c2da4bc5b2c97a1980741273097ce6c3cc",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/utils/Address.sol:240"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@matterlabs/zksync-contracts/l2/system-contracts/openzeppelin/utils/Address.sol:240"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/IERC4906.sol:IERC4906": {
+        "src": "@openzeppelin/contracts/interfaces/IERC4906.sol:10",
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/token/ERC721/ERC721.sol:ERC721": {
+        "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:19",
+        "version": {
+          "withMetadata": "25ecb68a608dc53a8bc6019de8a3f5f96640a2ef64af080658f197d75b2552ce",
+          "withoutMetadata": "0ffb8f83688bb18d7569856b74b879509666f009f3e4897d6133710e3340f82e",
+          "linkedWithoutMetadata": "0ffb8f83688bb18d7569856b74b879509666f009f3e4897d6133710e3340f82e"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata",
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string)",
+          "supportsInterface(bytes4)",
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "transferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC721",
+            "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:44"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:24"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:27"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:30"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:33"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:36"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts/token/ERC721/ERC721.sol:39"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721": {
+        "src": "@openzeppelin/contracts/token/ERC721/IERC721.sol:11",
+        "inherit": [
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)",
+          "safeTransferFrom(address,address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "setApprovalForAll(address,bool)",
+          "getApproved(uint256)",
+          "isApprovedForAll(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol:IERC721Receiver": {
+        "src": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage": {
+        "src": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol:12",
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/ERC721.sol:ERC721",
+          "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata",
+          "@openzeppelin/contracts/interfaces/IERC4906.sol:IERC4906",
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721URIStorage",
+              "label": "_tokenURIs",
+              "type": "t_mapping(t_uint256,t_string_storage)",
+              "src": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol:16"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_string_storage)": {
+              "label": "mapping(uint256 => string)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata": {
+        "src": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:12",
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "a623347f0280d4ed8aaeb4d5458fd410f3c8909959abcb9bb13f4c41ac24cbe1",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "c42409993f3e5b557443913349d8762400f41e99541a5d013caf09c7b1bf647e",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/ERC165.sol:22",
+        "inherit": [
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165": {
+        "src": "@openzeppelin/contracts/utils/introspection/IERC165.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "36a9dac8785bc9c886092f6336a6b7b056fc79c7368937c84ce3191fa813b211",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SafeMath.sol:SafeMath": {
+        "src": "@openzeppelin/contracts/utils/math/SafeMath.sol:16",
+        "version": {
+          "withMetadata": "382e258c9df9bb4fc27d0ff790495ae43ebd412dec03236da3a2e5b4bcf3c9ab",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "8e99d4dab8bf9aeb6e43f995eafaacc201a1cf81fe8638aa01535ef718ea5f80",
+          "withoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64",
+          "linkedWithoutMetadata": "3549540529f7cd39c5550a74fcc5f70e5e6b37f04564fcff838b549749e11f64"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/SongNFT.sol:SongNFT": {
+        "src": "contracts/SongNFT.sol:12",
+        "version": {
+          "withMetadata": "e54fc2e598a30545c000524ac0370e669ee7f0a4979dda8333cdadd4640d0c74",
+          "withoutMetadata": "89195cea6607a660e923367634e67e6169d6c16537356d8c2a65a8385ffa5abd",
+          "linkedWithoutMetadata": "89195cea6607a660e923367634e67e6169d6c16537356d8c2a65a8385ffa5abd"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage",
+          "@openzeppelin/contracts/token/ERC721/ERC721.sol:ERC721",
+          "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata",
+          "@openzeppelin/contracts/interfaces/IERC4906.sol:IERC4906",
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string,uint256,string,address,string)",
+          "mintNFT(address)",
+          "payRoyalties()",
+          "getInfo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SongNFT",
+            "src": "contracts/SongNFT.sol:56"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "SongNFT",
+              "label": "_currentTokenId",
+              "type": "t_uint256",
+              "src": "contracts/SongNFT.sol:17"
+            },
+            {
+              "contract": "SongNFT",
+              "label": "nftPrice",
+              "type": "t_uint256",
+              "src": "contracts/SongNFT.sol:19"
+            },
+            {
+              "contract": "SongNFT",
+              "label": "artist",
+              "type": "t_address",
+              "src": "contracts/SongNFT.sol:21"
+            },
+            {
+              "contract": "SongNFT",
+              "label": "audioURI",
+              "type": "t_string_storage",
+              "src": "contracts/SongNFT.sol:23"
+            },
+            {
+              "contract": "SongNFT",
+              "label": "royaltyBalance",
+              "type": "t_uint256",
+              "src": "contracts/SongNFT.sol:25"
+            },
+            {
+              "contract": "SongNFT",
+              "label": "coverURI",
+              "type": "t_string_storage",
+              "src": "contracts/SongNFT.sol:27"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/paymasters/GeneralPaymaster.sol:GeneralPaymaster": {
+        "src": "contracts/paymasters/GeneralPaymaster.sol:18",
+        "version": {
+          "withMetadata": "ff937c42361cab154ff6f4705b9d58176faa9d095b728627b3a42fb25ad7d261",
+          "withoutMetadata": "737c00f20f12ffed6a172b052b911b10297dfbd667db6e92c4c94c98f52489ca",
+          "linkedWithoutMetadata": "737c00f20f12ffed6a172b052b911b10297dfbd667db6e92c4c94c98f52489ca"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context",
+          "@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IPaymaster.sol:IPaymaster"
+        ],
+        "libraries": [],
+        "methods": [
+          "validateAndPayForPaymasterTransaction(bytes32,bytes32,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,bytes32[],bytes,bytes))",
+          "postTransaction(bytes,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,bytes32[],bytes,bytes),bytes32,bytes32,uint8,uint256)",
+          "withdraw(address payable)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/zkTune.sol:zkTune": {
+        "src": "contracts/zkTune.sol:11",
+        "version": {
+          "withMetadata": "3b257ad8fc74eacc98c588e95410d319add7d244372a7953c8e0cccc79c79190",
+          "withoutMetadata": "f09434624cefb9d67e17f834d58a0724cacf5ea16ccdb89054c2351b53846bcb",
+          "linkedWithoutMetadata": "f09434624cefb9d67e17f834d58a0724cacf5ea16ccdb89054c2351b53846bcb"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "registerArtist(string,string)",
+          "registerUser(string,string)",
+          "addSong(string,string,string,uint256)",
+          "streamSong(uint256)",
+          "getAllSongs()",
+          "getAllArtists()",
+          "getSongsByArtist(address)",
+          "getSongsStreamedByUser(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "zkTune",
+            "src": "contracts/zkTune.sol:75"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "zkTune",
+              "label": "artists",
+              "type": "t_mapping(t_address,t_struct(Artist)9354_storage)",
+              "src": "contracts/zkTune.sol:36"
+            },
+            {
+              "contract": "zkTune",
+              "label": "users",
+              "type": "t_mapping(t_address,t_struct(User)9359_storage)",
+              "src": "contracts/zkTune.sol:38"
+            },
+            {
+              "contract": "zkTune",
+              "label": "songs",
+              "type": "t_mapping(t_uint256,t_struct(Song)9374_storage)",
+              "src": "contracts/zkTune.sol:40"
+            },
+            {
+              "contract": "zkTune",
+              "label": "userHasNFT",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+              "src": "contracts/zkTune.sol:42"
+            },
+            {
+              "contract": "zkTune",
+              "label": "artistSongs",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/zkTune.sol:44"
+            },
+            {
+              "contract": "zkTune",
+              "label": "userStreams",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/zkTune.sol:46"
+            },
+            {
+              "contract": "zkTune",
+              "label": "artistID",
+              "type": "t_mapping(t_uint256,t_struct(Artist)9354_storage)",
+              "src": "contracts/zkTune.sol:48"
+            },
+            {
+              "contract": "zkTune",
+              "label": "artistAddresses",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/zkTune.sol:51"
+            },
+            {
+              "contract": "zkTune",
+              "label": "songIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/zkTune.sol:53"
+            },
+            {
+              "contract": "zkTune",
+              "label": "_currentSongId",
+              "type": "t_uint256",
+              "src": "contracts/zkTune.sol:55"
+            },
+            {
+              "contract": "zkTune",
+              "label": "_currentArtistId",
+              "type": "t_uint256",
+              "src": "contracts/zkTune.sol:57"
+            },
+            {
+              "contract": "zkTune",
+              "label": "totalSongs",
+              "type": "t_uint256",
+              "src": "contracts/zkTune.sol:59"
+            },
+            {
+              "contract": "zkTune",
+              "label": "totalUsers",
+              "type": "t_uint256",
+              "src": "contracts/zkTune.sol:61"
+            },
+            {
+              "contract": "zkTune",
+              "label": "totalArtists",
+              "type": "t_uint256",
+              "src": "contracts/zkTune.sol:63"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_struct(Artist)9354_storage)": {
+              "label": "mapping(address => struct zkTune.Artist)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_struct(Artist)9354_storage": {
+              "label": "struct zkTune.Artist",
+              "members": [
+                {
+                  "label": "name",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "profileURI",
+                  "type": "t_string_storage"
+                }
+              ]
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_address,t_struct(User)9359_storage)": {
+              "label": "mapping(address => struct zkTune.User)"
+            },
+            "t_struct(User)9359_storage": {
+              "label": "struct zkTune.User",
+              "members": [
+                {
+                  "label": "name",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "profileURI",
+                  "type": "t_string_storage"
+                }
+              ]
+            },
+            "t_mapping(t_uint256,t_struct(Song)9374_storage)": {
+              "label": "mapping(uint256 => struct zkTune.Song)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_struct(Song)9374_storage": {
+              "label": "struct zkTune.Song",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "artist",
+                  "type": "t_address"
+                },
+                {
+                  "label": "title",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "audioURI",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "coverURI",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "streamCount",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "songNFTAddress",
+                  "type": "t_address"
+                }
+              ]
+            },
+            "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+              "label": "mapping(uint256 => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_mapping(t_uint256,t_struct(Artist)9354_storage)": {
+              "label": "mapping(uint256 => struct zkTune.Artist)"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    }
+  ]
+}
